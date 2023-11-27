@@ -37,8 +37,19 @@ const bigNumber = 123n;
 console.log(typeof bigNumber); // bigint
 
 // 6. 참(true, yes) 또는 거짓(false, no)
+const isActive = false;
+console.log(typeof isActive); // boolean
+
 // 7. 데이터 컬렉션(collection) 또는 복잡한 엔티티(entity)
+const object = new Object({ name: 'seonboem' });
+console.log(object);
+
+const obj = {};
+console.log(typeof obj); // object
+
 // 8. 고유한 식별자(unique identifier)
+const unique = Symbol('uuid');
+console.log(unique); // Symbol(uuid)
 
 /* typeof 연산자의 2가지 사용법 ---------------------------------------------- */
 
@@ -48,9 +59,40 @@ console.log(typeof bigNumber); // bigint
 // 언어 상, 오류
 
 // Object
+const user = {
+  name: 'tiger',
+  age: 25,
+  sayHi: function () {
+    console.log('hello~');
+  },
+  alert1: function () {
+    // normal function
+  },
+  alert2() {
+    // consise method
+  },
+  alert3: () => {
+    // arrow function
+  },
+};
+console.log(user); // {name: 'tiger', age: 25, sayHi: ƒ}
+user.sayHi(); // hello~
 
 // Array
+const newArray = new Array([1, 2, 3]);
+const arr = [10, 100, 1000, 1, 2, 3];
+
+console.log(arr[2]); // 1000
 
 // function
+// 함수 vs 클래스 = 붕어빵 틀
+function 붕어빵틀(재료) {
+  console.log(`냠냠 ${재료}붕어빵`);
+  return '붕어빵';
+}
+붕어빵틀('팥'); // 냠냠 붕어빵
+
+const a = 붕어빵틀('팥'); // 냠냠 붕어빵
+console.log(a); // 붕어빵
 
 // this
