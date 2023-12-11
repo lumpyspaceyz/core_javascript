@@ -230,10 +230,10 @@ const salaries = {
 
 // 배열 구조 분해 할당을 이용해 월급의 총합을 구하세요
 
-// let total = 0;
-// for(let [key, value] of Object.entries(salaries)) {
-//   total += value
-// }
+let total = 0;
+for(let [key, value] of Object.entries(salaries)) {
+  total += value
+}
 // console.log(total)
 
 
@@ -279,3 +279,4 @@ const user1 = createUserData({
   job:'developer'
 })
 
+console.log(user1);
