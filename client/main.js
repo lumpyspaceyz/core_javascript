@@ -1,3 +1,1 @@
-console.log(navigator.language);
-
-const a = 10;
+alert('안녕 자바스크립트');
