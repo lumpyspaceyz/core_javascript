@@ -33,10 +33,8 @@ const first = getNode('.first'); // <span class="first">hello</span>
 console.log(first);
 
 
-
 /* 문서 대상 확인 */
 // - matches
-
 console.log( first.matches('span') ); // target에 항목(selector)이 있어?
 console.log( getNode('h1').contains( getNode('.second') ) ); // target(부모) 안에 자식 노드가 포함됐어?
 

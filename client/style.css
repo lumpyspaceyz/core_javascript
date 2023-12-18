@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  text-align: center;
+  /* text-align: center; */
   overflow: hidden;
 }
 
@@ -32,4 +32,47 @@ span {
 
 .menu.is-active{
   transform: translateX(-100%)
+}
+
+/* 축구공 실습 */
+.ground{
+  width: 400px;
+  height: 300px;
+  border: 5px solid black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#ball {
+  pointer-events: none;
+  transition: transform 0.3s;
+}
+
+
+/* 마우스 커서 실습 */
+.emotion{
+  font-size: 2rem;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* 웹 API - DOM */
+/* 이벤트 버블 */
+section{
+  background-color: orange;
+  padding: 2rem;
+}
+
+
+article{
+  background-color: dodgerblue;
+  padding: 2rem;
+}
+
+
+p{
+  background-color: hotpink;
+  padding: 2rem;
 }

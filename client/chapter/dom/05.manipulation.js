@@ -48,43 +48,7 @@
 const h1 = getNode('hi');
 
 const template = `<li class="list" style='background-color: orange;'> 영화 보기 </li>`;
-
 // document.body.insertAdjacentHTML('beforeend', template);
-
-
-// insertBefore()
-function insertBefore(node, text) {
-
-  if(typeof node === 'string') node = getNode(node);
-  node.insertAdjacentHTML('beforebegin', text);
-}
-
-
-// insertFirst()
-function insertFirst(node, text) {
-
-  if(typeof node === 'string') node = getNode(node);
-  node.insertAdjacentHTML('afterbegin', text);
-}
-
-
-// insertLast()
-function insertLast(node, text) {
-
-  if(typeof node === 'string') node = getNode(node);
-  node.insertAdjacentHTML('beforeend', text);
-}
-
-
-// insertAfter()
-function insertAfter(node, text) {
-
-  if(typeof node === 'string') node = getNode(node);
-  node.insertAdjacentHTML('afterend', text);
-}
-
-
-insertAfter('h1', template)
 
 
 // - insertAdjacentElement
